@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  position: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content p,
+a {
+  color: #fff;
+}
+footer a {
+  transition: all 0.5s ease;
+}
+footer a:hover {
+  color: rgb(241, 84, 84);
+}
+footer .content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content .box {
+  width: 33%;
+}
+footer .content .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+footer .content p {
+  text-align: justify;
+}
+footer .content .lower .topic {
+  margin: 20px 0 5px 0;
+}
+footer .content .lower i {
+  padding-right: 16px;
+}
+footer .content .middle {
+  padding-left: 80px;
+}
+footer .content .middle a {
+  line-height: 32px;
+}
+footer .content .right input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  background: #000;
+  border-radius: 6px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"] {
+  height: 45px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+  border: none;
+}
+footer .content .right input[type="submit"]:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid;
+}
+footer .content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.5s ease;
+}
+footer .content .media-icons a:hover {
+  border-color: rgb(255, 0, 0);
+}
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: #ffffff;
+  padding: 0 40px 5px 0;
+  margin-top: 15px;
+}
+footer .bottom a {
+  color: rgb(255, 0, 0);
+}
+
+@media (max-width: 1100px) {
+  footer .content .middle {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 950px) {
+  footer .content .box {
+    width: 50%;
+  }
+  .content .right {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 560px) {
+  footer {
+    position: relative;
+  }
+  footer .content .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle {
+    padding-left: 0;
+  }
+}
